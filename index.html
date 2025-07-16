@@ -203,8 +203,8 @@
     <header class="bg-primary-dark text-white shadow-lg sticky top-0 z-40">
         <div class="container mx-auto flex items-center justify-between p-4 h-24 relative">
             
-            <!-- Logo e Título para Desktop -->
-            <a href="#inicio" class="flex items-center space-x-4">
+            <!-- Logo e Título para Desktop (Clicável) -->
+            <a href="#inicio" class="flex items-center space-x-4 relative z-10">
                 <img src="logo.avif" alt="Logo SOS Máquinas" class="h-16 w-16 rounded-full flex-shrink-0">
                 <div class="hidden md:block">
                     <span class="text-2xl lg:text-3xl font-bold text-accent-yellow block">S.O.S MÁQUINAS</span>
@@ -212,7 +212,7 @@
                 </div>
             </a>
     
-            <!-- Título Centralizado para Mobile -->
+            <!-- Título Centralizado para Mobile (Clicável) -->
             <div class="md:hidden absolute inset-x-0 top-1/2 -translate-y-1/2 text-center">
                 <a href="#inicio">
                     <span class="text-2xl font-bold text-accent-yellow block">S.O.S MÁQUINAS</span>
@@ -220,8 +220,8 @@
                 </a>
             </div>
     
-            <!-- Navegação -->
-            <div>
+            <!-- Navegação (Wrapper com z-index para garantir a clicabilidade) -->
+            <div class="relative z-10">
                 <nav class="hidden md:flex">
                     <ul class="flex items-center space-x-6">
                         <li><a href="#inicio">Inicial</a></li>
