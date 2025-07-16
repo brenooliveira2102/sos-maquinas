@@ -4,26 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Otimizado para Bragança Paulista -->
     <title>S.O.S MAQUINAS | Conserto de Máquina de Lavar e Lava Seca em Bragança Paulista</title>
     <meta name="description" content="Assistência técnica especializada em conserto de máquinas de lavar em Bragança Paulista e região. Atendemos Brastemp, Consul, Electrolux, LG e Samsung. Orçamento rápido via WhatsApp!">
     <meta name="keywords" content="conserto de máquina de lavar bragança paulista, assistência técnica máquina de lavar bragança paulista, reparo de lavadora bragança paulista, técnico de máquina de lavar bragança paulista, brastemp, consul, electrolux, lg, samsung">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.seusite.com.br"> <!-- Substituir pelo seu domínio -->
-    <meta name="author" content="SOS Máquinas">
+    <link rel="canonical" href="https://www.seusite.com.br"> <meta name="author" content="SOS Máquinas">
 
-    <!-- Open Graph (para compartilhamento em redes sociais) -->
     <meta property="og:title" content="S.O.S MAQUINAS | Conserto de Máquina de Lavar em Bragança Paulista">
     <meta property="og:description" content="Assistência técnica especializada para lavadoras Brastemp, Consul, Electrolux, e mais, em Bragança Paulista.">
-    <meta property="og:image" content="maquinas-banner.avif"> <!-- Imagem que aparecerá ao compartilhar -->
-    <meta property="og:url" content="https://www.seusite.com.br"> <!-- Substituir pelo seu domínio -->
-    <meta property="og:type" content="website">
+    <meta property="og:image" content="maquinas-banner.avif"> <meta property="og:url" content="https://www.seusite.com.br"> <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
 
-    <!-- Favicon -->
     <link rel="icon" href="logo.avif" type="image/avif">
     
-    <!-- Tailwind CSS e Fontes -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -31,11 +24,28 @@
     <style>
         /* Estilos Globais */
         html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; background-color: #FFFFFF; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #FFFFFF; 
+            overflow-x: hidden; /* Remove a rolagem horizontal */
+        }
         .bg-primary-dark { background-color: #1E2B4B; }
         .text-primary-dark { color: #1E2B4B; }
         .bg-accent-yellow { background-color: #F0B800; }
         .text-accent-yellow { color: #F0B800; }
+
+        /* Barra de Rolagem Personalizada (Azul e Amarelo) */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1E2B4B; /* Fundo azul */
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #F0B800; /* Polegar amarelo */
+            border-radius: 20px;
+            border: 3px solid #1E2B4B; /* Borda azul em volta */
+        }
 
         /* Botão flutuante do WhatsApp com notificação */
         .whatsapp-float {
@@ -125,7 +135,6 @@
         }
     </style>
 
-    <!-- JSON-LD Schema for Local SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -176,19 +185,17 @@
 </head>
 <body class="text-gray-800">
 
-    <!-- Botão flutuante do WhatsApp -->
     <a href="https://wa.me/5511978036428?text=Ol%C3%A1%2C%20Marcelo!%20Vim%20do%20site%20SOS%20M%C3%A1quinas%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento." class="whatsapp-float" target="_blank" aria-label="WhatsApp Marcelo">
         <i class="fab fa-whatsapp"></i>
         <span class="notification-badge">1</span>
     </a>
 
-    <!-- Cabeçalho -->
     <header class="bg-primary-dark text-white shadow-lg sticky top-0 z-40">
-        <div class="container mx-auto flex items-center justify-between p-4">
-            <a href="#inicio" class="flex items-center space-x-4 flex-shrink-0">
-                <img src="logo.avif" alt="Logo SOS Máquinas" class="h-20 w-20 rounded-full">
+        <div class="container mx-auto flex items-center justify-center md:justify-between p-4 relative">
+            <a href="#inicio" class="flex items-center space-x-3 flex-shrink-0">
+                <img src="logo.avif" alt="Logo SOS Máquinas" class="h-16 w-16 md:h-20 md:w-20 rounded-full">
                 <div class="text-center">
-                    <span class="text-2xl md:text-3xl font-bold text-accent-yellow block">S.O.S MÁQUINAS</span>
+                    <span class="text-xl md:text-3xl font-bold text-accent-yellow block">S.O.S MÁQUINAS</span>
                     <span class="text-xs md:text-sm text-gray-300">Conserto de máquina de lavar e lava e seca</span>
                 </div>
             </a>
@@ -201,7 +208,7 @@
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
-            <div class="md:hidden">
+            <div class="md:hidden absolute right-4 top-1/2 -translate-y-1/2">
                 <button id="hamburger-icon" class="text-white text-2xl focus:outline-none">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -217,7 +224,6 @@
     </header>
 
     <main>
-        <!-- Seção Principal (Hero) -->
         <section id="inicio" class="hero-section-walter bg-white flex items-center justify-center pt-16">
             <div class="container mx-auto px-4 content-wrapper flex items-center">
                 <div class="text-content md:w-1/2 md:text-left">
@@ -235,11 +241,9 @@
             </div>
         </section>
 
-        <!-- Seção Nossos Serviços -->
         <section id="servicos" class="py-16 bg-gray-50">
             <div class="container mx-auto px-4">
                 <h2 class="text-4xl font-bold text-center text-primary-dark mb-12">Nossos Serviços em Bragança Paulista</h2>
-                <!-- Layout para Desktop -->
                 <div class="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
                     <div class="bg-white p-6 rounded-lg shadow-md text-center flex flex-col items-center">
                         <img src="https://img.icons8.com/dotty/80/1E2B4B/washing-machine.png" alt="Ícone Conserto Geral" class="w-20 h-20 mb-4">
@@ -267,7 +271,6 @@
                         <p class="text-gray-700 flex-grow">Serviço especializado para limpeza pesada de edredons e cobertores.</p>
                     </div>
                 </div>
-                <!-- Carrossel para Mobile -->
                 <div class="md:hidden carousel-container">
                     <div class="carousel-wrapper">
                         <div class="carousel-item bg-white p-6 rounded-lg shadow-md text-center flex flex-col items-center">
@@ -306,7 +309,6 @@
             </div>
         </section>
 
-        <!-- Seção Sobre a SOS Máquinas -->
         <section id="sobre" class="py-16 bg-white">
             <div class="container mx-auto px-4">
                 <h2 class="text-4xl font-bold text-center text-primary-dark mb-12">Sobre a SOS Máquinas</h2>
@@ -330,12 +332,10 @@
             </div>
         </section>
         
-        <!-- Seção de Avaliações -->
         <section id="avaliacoes" class="py-16 bg-gray-50">
             <div class="container mx-auto px-4">
                 <h2 class="text-4xl font-bold text-center text-primary-dark mb-12">O que nossos clientes dizem</h2>
                 
-                <!-- Sumário Google -->
                 <div class="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto text-center mb-12">
                     <img width="48" height="48" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" class="mx-auto mb-2"/>
                     <h3 class="text-2xl font-semibold text-primary-dark">Somos 5 estrelas no Google</h3>
@@ -355,38 +355,32 @@
                     </a>
                 </div>
 
-                <!-- Carrossel de Avaliações para Mobile -->
                 <div class="md:hidden carousel-container">
                     <div class="carousel-wrapper">
-                        <!-- Avaliação 1 -->
                         <div class="carousel-item bg-white p-6 rounded-lg shadow-md flex flex-col">
                             <h4 class="text-xl font-bold text-primary-dark">Andressa Souza</h4>
                             <div class="flex text-yellow-400 my-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                             <p class="text-gray-700 flex-grow">"Marcelo fez um ótimo trabalho, explicou um problema que máquina está... Eu irei indicar ele pra família e amigos com certeza, obrigado pelo seu trabalho!"</p>
                             <span class="text-gray-500 text-sm mt-4">Fonte: Google</span>
                         </div>
-                        <!-- Avaliação 2 -->
                         <div class="carousel-item bg-white p-6 rounded-lg shadow-md flex flex-col">
                             <h4 class="text-xl font-bold text-primary-dark">Amauri Oliveira De Souza</h4>
                             <div class="flex text-yellow-400 my-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                             <p class="text-gray-700 flex-grow">"O técnico Marcelo tem um vasto conhecimento profissional. Efetuou o serviço rapidamente e o preço cobrado foi justo e possivelmente o melhor da região. Recomendo! 👍👍👍"</p>
                             <span class="text-gray-500 text-sm mt-4">Fonte: Google</span>
                         </div>
-                        <!-- Avaliação 3 -->
                         <div class="carousel-item bg-white p-6 rounded-lg shadow-md flex flex-col">
                             <h4 class="text-xl font-bold text-primary-dark">MILTON PASSOS TEIXEIRA</h4>
                             <div class="flex text-yellow-400 my-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                             <p class="text-gray-700 flex-grow">"O profissional Marcelo, atendeu muito bem, foi atencioso e eficiente em seu diagnóstico e preço justo. Recomendo tranquilamente seus serviços."</p>
                             <span class="text-gray-500 text-sm mt-4">Fonte: Google</span>
                         </div>
-                         <!-- Avaliação 4 -->
-                        <div class="carousel-item bg-white p-6 rounded-lg shadow-md flex flex-col">
+                         <div class="carousel-item bg-white p-6 rounded-lg shadow-md flex flex-col">
                             <h4 class="text-xl font-bold text-primary-dark">Erica Geraldis</h4>
                             <div class="flex text-yellow-400 my-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                             <p class="text-gray-700 flex-grow">"Excelente profissional, iniciou o atendimento no horário combinado, lavou o tambor da máquina... deixou o ambiente limpo e seco, não riscou a máquina..."</p>
                             <span class="text-gray-500 text-sm mt-4">Fonte: Google</span>
                         </div>
-                        <!-- Avaliação 5 -->
                         <div class="carousel-item bg-white p-6 rounded-lg shadow-md flex flex-col">
                             <h4 class="text-xl font-bold text-primary-dark">Jason Mota</h4>
                             <div class="flex text-yellow-400 my-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
@@ -396,45 +390,38 @@
                     </div>
                 </div>
                 
-                <!-- Grid de Avaliações para Desktop -->
                 <div class="hidden md:grid md:grid-cols-1 lg:grid-cols-3 gap-8">
-                        <!-- Avaliação 1 -->
-                       <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
+                        <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
                             <h4 class="text-xl font-bold text-primary-dark">Andressa Souza</h4>
                             <div class="flex text-yellow-400 my-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                             <p class="text-gray-700 flex-grow">"Marcelo fez um ótimo trabalho, explicou um problema que máquina está, não irei arrumar pq pretendo comprar outra, da pra usar por enquanto. Eu irei indicar ele pra família e amigos com certeza, obrigado pelo seu trabalho!"</p>
                             <span class="text-gray-500 text-sm mt-4">Fonte: Google</span>
                         </div>
-                        <!-- Avaliação 2 -->
                         <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
                             <h4 class="text-xl font-bold text-primary-dark">Amauri Oliveira De Souza</h4>
                             <div class="flex text-yellow-400 my-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                             <p class="text-gray-700 flex-grow">"O técnico Marcelo tem um vasto conhecimento profissional. Efetuou o serviço rapidamente e o preço cobrado foi justo e possivelmente o melhor da região. Recomendo! 👍👍👍"</p>
                             <span class="text-gray-500 text-sm mt-4">Fonte: Google</span>
                         </div>
-                        <!-- Avaliação 3 -->
                         <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
                             <h4 class="text-xl font-bold text-primary-dark">MILTON PASSOS TEIXEIRA</h4>
                             <div class="flex text-yellow-400 my-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                             <p class="text-gray-700 flex-grow">"O profissional Marcelo, atendeu muito bem, foi atencioso e eficiente em seu diagnóstico e preço justo. Recomendo tranquilamente seus serviços."</p>
                             <span class="text-gray-500 text-sm mt-4">Fonte: Google</span>
                         </div>
-                        <!-- Avaliação 4 -->
                         <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
                             <h4 class="text-xl font-bold text-primary-dark">Erica Geraldis</h4>
                             <div class="flex text-yellow-400 my-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                             <p class="text-gray-700 flex-grow">"Excelente profissional, iniciou o atendimento no horário combinado, lavou o tambor da máquina de lavar com Wap, logo depois deixou o ambiente limpo e seco, não riscou a máquina, trocou o kit mecanismo com as ferramentas corretas."</p>
                             <span class="text-gray-500 text-sm mt-4">Fonte: Google</span>
                         </div>
-                        <!-- Avaliação 5 -->
                         <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
                             <h4 class="text-xl font-bold text-primary-dark">Jason Mota</h4>
                             <div class="flex text-yellow-400 my-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                             <p class="text-gray-700 flex-grow">"Profissional competente, atende super rapido, e ainda é honesto nos valores que cobra. Super indico sem medo de errar."</p>
                             <span class="text-gray-500 text-sm mt-4">Fonte: Google</span>
                         </div>
-                        <!-- Avaliação 6 (Placeholder) -->
-                       <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
+                        <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
                             <h4 class="text-xl font-bold text-primary-dark">Cliente Satisfeito</h4>
                             <div class="flex text-yellow-400 my-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                             <p class="text-gray-700 flex-grow">"Serviço de alta qualidade, rápido e com preço justo. Recomendo a todos de Bragança e região que precisam de um técnico de confiança."</p>
@@ -444,7 +431,6 @@
             </div>
         </section>
 
-        <!-- Seção Perguntas Frequentes (FAQ) -->
         <section id="faq" class="py-16 bg-white">
             <div class="container mx-auto px-4">
                 <h2 class="text-4xl font-bold text-center text-primary-dark mb-12">Perguntas Frequentes</h2>
@@ -489,7 +475,6 @@
             </div>
         </section>
 
-        <!-- Seção de Contato e Mapa -->
         <section id="contato" class="py-16 bg-gray-50">
             <div class="container mx-auto px-4">
                 <h2 class="text-4xl font-bold text-center text-primary-dark mb-12">Fale Conosco</h2>
@@ -528,7 +513,6 @@
         </section>
     </main>
 
-    <!-- Rodapé -->
     <footer class="bg-primary-dark text-white py-8">
         <div class="container mx-auto px-4 text-center">
             <p class="text-gray-400">© 2024 SOS Máquinas. Todos os direitos reservados.</p>
